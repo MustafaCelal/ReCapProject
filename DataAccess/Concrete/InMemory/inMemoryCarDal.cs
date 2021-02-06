@@ -5,11 +5,11 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.InMemory
 {
-    public class inMemoryCarDal:ICarDal
+    public class InMemoryCarDal:ICarDal
     {
         private List<Car> _cars;
 
-        public inMemoryCarDal(List<Car> cars)
+        public InMemoryCarDal()
         {
             _cars = new List<Car>()
             {
@@ -21,7 +21,7 @@ namespace DataAccess.Concrete.InMemory
             };
         }
 
-        public List<Car> GelAll()
+        public List<Car> GetAll()
         {
             return _cars;
         }
