@@ -1,6 +1,5 @@
 ﻿using System;
 using Business.Concrete;
-using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 
 namespace ConsoleUI
