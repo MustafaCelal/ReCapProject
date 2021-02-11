@@ -5,7 +5,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.InMemory
 {
-    public class InMemoryCarDal:ICarDal
+    public class InMemoryCarDal//:ICarDal
     {
         private List<Car> _cars;
 
@@ -14,8 +14,8 @@ namespace DataAccess.Concrete.InMemory
             _cars = new List<Car>()
             {
                 new Car(){Id = 1, BrandId = 2, ColorId = 1, DailyPrice = 150000, Description = "Son model", ModelYear = "2019"},
-                new Car(){Id = 1, BrandId = 3, ColorId = 3, DailyPrice = 150000, Description = "parçaları ucuz",ModelYear = "2000"},
-                new Car(){Id = 1, BrandId = 1, ColorId = 1, DailyPrice = 150000, Description = "tam bir classic",ModelYear = "1950"},
+                new Car(){Id = 1, BrandId = 3, ColorId = 3, DailyPrice = 50000, Description = "parçaları ucuz",ModelYear = "2000"},
+                new Car(){Id = 1, BrandId = 1, ColorId = 1, DailyPrice = 100000, Description = "tam bir classic",ModelYear = "1950"},
                 new Car(){Id = 1, BrandId = 4, ColorId = 2, DailyPrice = 150000, Description = "mercedes kalitesi",ModelYear = "1970"},
                 new Car(){Id = 1, BrandId = 5, ColorId = 2, DailyPrice = 150000, Description = "eniştelere özel", ModelYear = "2010"}
             };

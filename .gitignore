@@ -3,3 +3,12 @@
 ################################################################################
 
 /Business/obj
+/.vs/ReCapProject
+/ConsoleUI/obj
+/DataAccess/obj
+/Entities/obj
+/Business/bin/Debug/netstandard2.0
+/ConsoleUI/bin/Debug/netcoreapp3.1
+/Core/obj
+/DataAccess/bin/Debug
+/Entities/bin/Debug/netstandard2.0
