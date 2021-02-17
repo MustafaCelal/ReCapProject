@@ -1,4 +1,4 @@
 # ReCapProject
 Araba kiralama sistemi yazıyoruz.
 
-Engin Demiroğ'un Yazılımcı geliştirme kamp ödevi
+Engin Demiroğ'un Yazılım Geliştirici Yetiştirme kamp ödevi
