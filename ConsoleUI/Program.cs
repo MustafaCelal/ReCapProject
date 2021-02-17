@@ -8,7 +8,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarManager carManager = new CarManager(new EfCarDal());
+            CarManager _carManager = new CarManager(new EfCarDal());
 
             //getAllCar(carManager);
 
@@ -29,10 +29,38 @@ namespace ConsoleUI
             //getAllCar(carManager);
 
 
-            CarTest();
+            //CarTest();
             //getAllCar(carManager);
+
+
+            BrandManager _brandManager = new BrandManager(new EfBrandDal());
+            ColorManager _colorManager = new ColorManager(new EfColorDal());
+
+            TEST(_carManager, _brandManager);
+
+
         }
 
+        private static void TEST(CarManager carManager, BrandManager brandManager)
+        {
+            Console.WriteLine("     MARKALAR    ");
+            foreach (var brand in brandManager.GetAll().Data)
+            {
+                Console.WriteLine(brand.BrandName);
+            }
+            
+            Console.WriteLine("     BrandId'si 2 olan araçlar       ");
+            foreach (var car in carManager.GetCarsByBrandId(2).Data)
+            {
+                Console.WriteLine(car.Description);
+            }
+
+            Console.WriteLine("     ColorId' si 1 olan araçların modelyılı      ");
+            foreach (var car in carManager.GetCarsByColorId(1).Data)
+            {
+                Console.WriteLine(car.ModelYear);
+            }
+        }
         private static void CarTest()
         {
             CarManager carManager = new CarManager(new EfCarDal());
