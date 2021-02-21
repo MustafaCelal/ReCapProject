@@ -6,7 +6,7 @@ using System.Text;
 namespace Entities.Concrete
 {
     //Kullanıcılar tablosu
-    public class Users:IEntity
+    public class User:IEntity
     {
         //Users-->Id,FirstName,LastName,Email,Password
 

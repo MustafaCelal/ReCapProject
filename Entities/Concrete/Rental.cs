@@ -6,7 +6,7 @@ using System.Text;
 namespace Entities.Concrete
 {
     //Arabanın kiralanma bilgisini tutan tablo
-    public class Rentals:IEntity
+    public class Rental:IEntity
     {
         //Rentals-->Id, CarId, CustomerId, RentDate(Kiralama Tarihi), ReturnDate(Teslim Tarihi)
         public int Id { get; set; }
