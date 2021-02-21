@@ -20,7 +20,12 @@ namespace Business.Concrete
 
         public IResult Add(Rental rental)
         {
-            //buraya neler yazılacak?
+            var result = _rentalDal.Get(p => p.CarId == rental.CarId && p.ReturnDate == null);
+            if (result != null)
+            {
+                return new ErrorResult(Messages.RentalAddedError);
+
+            }
             _rentalDal.Add(rental);
             return new SuccessResult(Messages.RentalAdded);
         }
