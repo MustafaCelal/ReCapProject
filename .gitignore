@@ -13,3 +13,5 @@
 /DataAccess/bin/Debug
 /Entities/bin/Debug/netstandard2.0
 /Core/bin/Debug/netstandard2.0
+/WebAPI/obj
+/WebAPI/Properties
