@@ -23,6 +23,8 @@ namespace Business.Constants
         public static string ColorsListed = "Renkler listelendi";
         public static string ColorDeleted = "Renk silindi";
         public static string ColorAdded = "Renk eklendi";
+        public static string ColorNameLength = "Color Adı 2 ile 50 karakter aralığında olmalı";
+
 
         public static string UserAdded = "Kullanıcı eklendi";
         public static string UserDeleted = "Kullanıcı silindi";
@@ -40,5 +42,6 @@ namespace Business.Constants
         public static string RentalUpdated = "Kiralama güncellendi";
         public static string RentalAddedError = "Kiralama eklenemedi";
 
+        
     }
 }
